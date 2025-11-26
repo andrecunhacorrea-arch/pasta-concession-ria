@@ -117,33 +117,33 @@ while True:
                 print("opção invalida, tente novamente")
 
     elif pessoa == 2:
-        id_digitado = int(input("\n digite seu ID para entrar no menu de vendedor: "))
-        if id_digitado == vendedor["id"]:
-            print("ID confirmado! acessando menu de vendedor")
+       while True:
+            id_digitado = int(input("\n digite seu ID para entrar no menu de vendedor: "))
+            if id_digitado == vendedor["id"]:
+                print("ID confirmado! acessando menu de vendedor")
 
-        else:
-            print("id incorreto, tente novamente")    
-        
-        while True:
-            menu_vendedor()
-            opc = int(input("escolha uma opção: "))
+                menu_vendedor()
+                opc = int(input("escolha uma opção: "))
 
-            if opc == 1:
-                print("registrar novo carro")
+                if opc == 1:
+                    print("registrar novo carro")
 
-            elif opc == 2:
-                print("consultar tabela FIPE")
+                elif opc == 2:
+                    print("consultar tabela FIPE")
 
-            elif opc == 3:
-                print("consultar estoque completo")
+                elif opc == 3:
+                    print("consultar estoque completo")
 
-            elif opc == 4:
-                print("voltando ao menu ")
-                
+                elif opc == 4:
+                    print("voltando ao menu ")
+                    
 
-            elif opc == 5:
-                print("saindo do sistema...")
-                break
+                elif opc == 5:
+                    print("saindo do sistema...")
+                    break
+
+                else:
+                    print("nenhuma opção válida, tente novamente")
 
             else:
-                print("nenhuma opção válida, tente novamente")           
+                print("id incorreto, tente novamente")         
